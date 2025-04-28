@@ -1,5 +1,37 @@
-<h1> Paper </h1>
-<%= @random_move%>
+<div>
+    <a href="/rock">
+      Play Rock
+    </a>
+  </div>
+
+  <div>
+    <a href="/paper">
+      Play Paper
+    </a>
+  </div>
+
+  <div>
+    <a href="/scissors">
+      Play Scissors
+    </a>
+  </div>
+
+
+<h1> We played paper!</h1>
+
+<h1> They played <%= @comp_move %>  </h1>
+
+
+     <% if @outcome == "won"%> 
+      <h1> We  <%= @outcome%>!</h1>
+      <% elsif @outcome == "lost"%>
+       <h1> We  <%= @outcome%>!</h1>
+      <% else %>
+      <h1>We <%=@outcome%>! </h1>
+      <% end %>
+     
+
+
 
 
  <a href="/">
